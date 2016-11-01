@@ -17,7 +17,8 @@ public class FirstPanel extends JPanel
 	{
 		super();
 		this.baseController = baseController;
-		
+		this.colorButton = new JButton("colors");
+		this.randomButton = new JButton("wha!?!? colors XD");
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -26,6 +27,8 @@ public class FirstPanel extends JPanel
 	private void setupPanel()
 	{
 		this.setBackground(Color.GREEN);
+		this.add(colorButton);
+		this.add(randomButton);
 	}
 	
 	private void setupLayout()

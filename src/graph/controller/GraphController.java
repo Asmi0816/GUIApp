@@ -1,8 +1,17 @@
 package graph.controller;
 
+import graph.view.FirstFrame;
+
 public class GraphController 
 {
-public void start()
+	
+	private FirstFrame appFrame;
+	
+	public GraphController()
+	{
+		this.appFrame = new FirstFrame(this);
+	}
+	public void start()
 	{
 	
 	}
